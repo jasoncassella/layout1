@@ -1,0 +1,134 @@
+* {
+	box-sizing: border-box;
+}
+
+#logo {
+	width: 65px;
+}
+
+#join {
+	color: #ffd900;
+	font-weight: 700;
+}
+
+#join:hover {
+	color: #deaf53;
+}
+
+body {
+	background-color: #181a1b;
+	color: aliceblue;
+	display: flex;
+	margin: 1.5% 1.5%;
+}
+
+nav {
+	width: 550px;
+}
+nav,
+nav ul {
+	display: flex;
+	flex-direction: column;
+}
+
+#home {
+	height: 130px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+nav ul {
+	height: 300px;
+	justify-content: space-around;
+}
+
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: #808080;
+	font-size: 1.2rem;
+	font-weight: 100;
+}
+
+span {
+	display: block;
+	color: lightgray;
+	margin: 5px;
+	font-weight: 700;
+	margin: 0;
+}
+main img {
+	max-width: 550px;
+}
+ul {
+	padding: 0;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+nav,
+main,
+aside {
+	padding: 0 1%;
+}
+
+h1,
+h2 {
+	margin: 15px 0;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+aside {
+	max-width: 500px;
+}
+aside ul li {
+	padding-bottom: 2%;
+	border-bottom: 1px solid rgb(98, 98, 98);
+}
+
+@media all and (max-width: 1350px) {
+	#home a,
+	#home + ul li a {
+		font-size: 1rem;
+	}
+}
+
+@media all and (max-width: 1203px) {
+	#home a,
+	#home + ul li a {
+		font-size: 0.8rem;
+	}
+}
+
+@media all and (max-width: 1110px) {
+	nav {
+		display: none;
+	}
+}
+
+@media (min-width: 896px) and (max-width: 953px) {
+	h2 {
+		font-size: 1.5rem;
+	}
+}
+
+@media all and (max-width: 895px) {
+	main img {
+		max-width: 400px;
+	}
+	body {
+		flex-direction: column;
+	}
+	h1 {
+		font-size: 1.5rem;
+	}
+	h2 {
+		font-size: 1.3rem;
+	}
+}
